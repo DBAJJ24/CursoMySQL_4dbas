@@ -14,12 +14,19 @@ Instalacion Centos 7
 el disco realiza la instalacion minima por lo que hay que instalar ciertos paquetes antes de iniciar, asi que, una vez terminada la instalacion basica:
 
 1.- primero actualizamos el sistema
+
 sudo yum update && yum upgrade
+
 2.- instalamos la paqueteria en caso de que falte
+
 sudo yum install bzip2 tar rar zip net-tools gcc make perl wget
+
 3.- creamos un directorio para montar la imagen de las utilerias de vbox
+
 sudo mkdir /media/cdrom
+
 4.- instalamos epel
+
 sudo yum install epel-release
 5.- agregamos los encabezados del kernel
 -- primero validamos: ls -ltra /usr/src/kernel
