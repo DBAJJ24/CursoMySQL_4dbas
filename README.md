@@ -45,28 +45,17 @@ sudo mount -t iso9660 -o loop /dev/sr0 /media/cdrom
 
 -- ejecutamos:
 
-/media/cdrom/./BVoxLinuxAdditions.run
+/media/cdrom/./VBoxLinuxAdditions.run
 
 7.-deshabilitar selinux
 
 -- por comodidad deshabilitaremos selinux para poder modificar la configuracoin default de la carpeta de datos de 
 mysql asi como el contexto de operacion del mismo
 
+8.- desinstalamos las bibliotecas de mariadb que tiene el sistema instaladas por defecto
 
+yum remove mariadb-libs
 
 Listo !
 tenemos el sistema con lo suficiente para poder isntalar un servidor dedicado de base de datos.
-
-ahora la instalacion del motor de base de datos
-yum remove mariadb-libs
-
-
-mysql-community-common-8.0.20-1.el7.x86_64.rpm
-mysql-community-libs-8.0.20-1.el7.x86_64.rpm
-mysql-community-client-8.0.20-1.el7.x86_64.rpm
-mysql-community-server-8.0.20-1.el7.x86_64.rpm
-
-
-
-
 
