@@ -28,17 +28,30 @@ sudo mkdir /media/cdrom
 4.- instalamos epel
 
 sudo yum install epel-release
+
 5.- agregamos los encabezados del kernel
+
 -- primero validamos: ls -ltra /usr/src/kernel
+
 -- la lista esta en cero
+
 yum install -y kernel-devel
+
 -- reiniciamos
+
 6.- montamos el disco
+
 sudo mount -t iso9660 -o loop /dev/sr0 /media/cdrom
+
 -- ejecutamos:
+
 /media/cdrom/./BVoxLinuxAdditions.run
+
 7.-deshabilitar selinux
--- por comodidad deshabilitaremos selinux para poder modificar la configuracoin default de la carpeta de datos de mysql asi como el contexto de operacion del mismo
+
+-- por comodidad deshabilitaremos selinux para poder modificar la configuracoin default de la carpeta de datos de 
+mysql asi como el contexto de operacion del mismo
+
 
 
 Listo !
